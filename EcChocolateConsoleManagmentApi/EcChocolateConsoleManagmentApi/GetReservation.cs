@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EcChocolateConsoleManagmentApi
@@ -11,7 +8,8 @@ namespace EcChocolateConsoleManagmentApi
     {
         public static async Task GetById(HttpClient client, string id)
         {
-            // Get gamelist by Id
+           
+            // Get api/reservation/id
             try
             {
                 HttpResponseMessage response = await client.GetAsync($"api/reservations/{id}");

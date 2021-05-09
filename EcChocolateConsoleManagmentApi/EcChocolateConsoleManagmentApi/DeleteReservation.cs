@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EcChocolateConsoleManagmentApi
@@ -11,12 +8,13 @@ namespace EcChocolateConsoleManagmentApi
     {
         public static async Task DeleteData(HttpClient client, string id)
         {
-            // Delete  api/GameList/id
+            // Delete  api/reservations/id
             try
             {
                 HttpResponseMessage response = await client.DeleteAsync($"api/reservations/{id}");
                 response.EnsureSuccessStatusCode();
 
+                Console.WriteLine("  >>> Reservation Is Deleted <<<");
             }
             catch (HttpRequestException e)
             {
