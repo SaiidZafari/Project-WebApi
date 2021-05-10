@@ -76,7 +76,10 @@ namespace EcChocolateConsoleManagmentApi
                     else
                     {
                         Console.Clear();
-                        Console.WriteLine("Ah ah ah, you didn't say the magic word!");
+                        Console.WriteLine($@"
+
+
+                        Your Access denied. Please try again ...");
                         Thread.Sleep(2000);
                     }
 
