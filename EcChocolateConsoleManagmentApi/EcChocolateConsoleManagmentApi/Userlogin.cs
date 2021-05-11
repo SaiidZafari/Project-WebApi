@@ -18,7 +18,8 @@ namespace EcChocolateConsoleManagmentApi
             using (var client = new HttpClient())
             {
 
-                client.BaseAddress = new Uri("https://localhost:44366/");
+                client.BaseAddress = new Uri("https://localhost:44306/");
+               // client.BaseAddress = new Uri("https://localhost:44366/");
 
                 // remove all etries from the System.Net.Http.Handlers
                 client.DefaultRequestHeaders.Accept.Clear();

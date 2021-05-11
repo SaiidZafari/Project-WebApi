@@ -17,8 +17,8 @@ namespace EcChocolateConsoleManagmentApi
         static void Main(string[] args)
 
         {
-            client.BaseAddress = new Uri("https://localhost:44366/");
-            //client.BaseAddress = new Uri("https://localhost:44366/api/");
+            client.BaseAddress = new Uri("https://localhost:44306/");
+            //client.BaseAddress = new Uri("https://localhost:44366/");
 
             // Install-package Microsoft.AspNet.WebApi  44336
             // 
